@@ -159,6 +159,9 @@ And that's it! Click the increment, decrement, and reset buttons to change the s
 Let's cover what you did:
 
 •	Defined actions to express events.
+
 •	Defined a reducer function to manage the state of the counter.
+
 •	Registered the global state container that is available throughout your application.
+
 •	Injected the Store service to dispatch actions and select the current state of the counter.
