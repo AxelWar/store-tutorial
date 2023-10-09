@@ -1,5 +1,5 @@
 # store-tutorial
-# A Tutorial
+
 The following tutorial shows you how to manage the state of a counter, and how to select and display it within an Angular component.
 
 1.	Create a new file named counter.actions.ts to describe the counter actions to increment, decrement, and reset its value.
@@ -159,9 +159,6 @@ And that's it! Click the increment, decrement, and reset buttons to change the s
 Let's cover what you did:
 
 •	Defined actions to express events.
-
 •	Defined a reducer function to manage the state of the counter.
-
 •	Registered the global state container that is available throughout your application.
-
 •	Injected the Store service to dispatch actions and select the current state of the counter.
