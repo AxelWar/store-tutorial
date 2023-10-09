@@ -1,24 +1,34 @@
 .container {
-text-align: center;
-padding: 50px;
+  text-align: center;
+  padding: 50px;
+  display: flex;
 }
 
-.counter-value{
-    background-color: black;
-    color:red;
-    padding: 10px;
+.counter-value {
+  background-color: black;
+  color: red;
+  padding: 10px;
+  font-size: 24px;
+  width: 250px;
+  align-self: center;
 }
 
 .reset-container {
-    padding: 10px;
+  margin: 10px;
 }
 
-.counter-actions{
-    padding: 10px;
-    .increment-button{
-        margin: 10px;
-    }
-    .decrement-button{
-        margin: 10px;
-    }
+.counter-actions {
+  align-self: center;
+  .increment-button {
+    margin: 10px;
+  }
+  .decrement-button {
+    margin: 10px;
+  }
+}
+
+.button-span{
+    display: flex;
+    align-items: center;
+    white-space: break-spaces;
 }

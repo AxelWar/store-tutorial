@@ -1,15 +1,46 @@
-<div class="container">
-    <div class="counter-actions">
-        <span class="increment-button">
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title>NgRx Store App</mat-card-title>
+  </mat-card-header>
 
-            <button (click)="increment()">Increment</button>
-        </span>
-        <span class="decrement-button">
-            <button (click)="decrement()">Decrement</button>
-        </span>
-    </div>
-    <div class="counter-value">Current Count: {{ count$ | async }} </div>
-    <div class="reset-container">
-        <button (click)="reset()">Reset Counter</button>
-    </div>
-</div>
+  <mat-card-actions class="counter-actions">
+    <button
+      class="increment-button"
+      mat-raised-button
+      color="primary"
+      (click)="increment()"
+    >
+      <span class="button-span">
+        Increment
+        <mat-icon>add_circle_outline</mat-icon>
+      </span>
+    </button>
+    <button
+      class="decrement-button"
+      mat-raised-button
+      color="warn"
+      (click)="decrement()"
+    >
+      <span class="button-span">
+        Decrement
+        <mat-icon>remove_circle_outline</mat-icon>
+      </span>
+    </button>
+  </mat-card-actions>
+
+  <div class="counter-value">Current Count: {{ count$ | async }}</div>
+
+  <mat-card-actions class="counter-actions">
+    <button
+      class="reset-container"
+      mat-raised-button
+      color="accent"
+      (click)="reset()"
+    >
+      <span class="button-span">
+        Reset Counter
+        <mat-icon>clear</mat-icon>
+      </span>
+    </button>
+  </mat-card-actions>
+</mat-card>
