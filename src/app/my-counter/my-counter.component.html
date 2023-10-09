@@ -1,7 +1,15 @@
-<button (click)="increment()">Increment</button>
+<div class="container">
+    <div class="counter-actions">
+        <span class="increment-button">
 
-<div>Current Count: {{ count$ | async }}</div>
-
-<button (click)="decrement()">Decrement</button>
-
-<button (click)="reset()">Reset Counter</button>
+            <button (click)="increment()">Increment</button>
+        </span>
+        <span class="decrement-button">
+            <button (click)="decrement()">Decrement</button>
+        </span>
+    </div>
+    <div class="counter-value">Current Count: {{ count$ | async }} </div>
+    <div class="reset-container">
+        <button (click)="reset()">Reset Counter</button>
+    </div>
+</div>
